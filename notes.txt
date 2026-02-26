@@ -1,0 +1,12 @@
+npm init -y
+npm i express nodemon dotenv mongoose jsonwebtoken bcrypt
+
+package.json -> change
+  "type": "module",
+
+https://www.jwt.io/
+https://bcrypt-generator.com/
+
+https://cloud.mongodb.com/v2/699468f5181657c5d2e93138#/overview
+
+
