@@ -9,6 +9,13 @@ app.use(express.json());
 
 connectDB();
 
+
+// Middleware to ensure Content-Type: application/json header is set
+app.use((req, res, next) => {
+    res.setHeader('Content-Type', 'application/json');
+    next();
+});
+
 app.use("/api/user", userRoutes);
 
 app.listen(process.env.PORT, () => {
